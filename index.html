@@ -51,6 +51,30 @@
             </div>
         </section>
 
+        <!-- Gifts Section -->
+        <section class="gifts-section animate-on-scroll">
+            <div class="card-container">
+                <h2>Mesa de Regalos</h2>
+                <p class="form-desc">Si deseas tener un detalle, puedes registrarlo aquí para evitar repeticiones (es completamente anónimo).</p>
+                
+                <form id="gift-form" class="gift-form-layout">
+                    <div class="input-group gift-input-group">
+                        <input type="text" id="gift-name" placeholder="¿Qué regalo llevarás?" required>
+                        <button type="button" class="btn btn-olive btn-register" onclick="registerGift()">Registrar</button>
+                    </div>
+                    <div id="gift-message" class="status-message"></div>
+                </form>
+
+                <div class="gift-list-container">
+                    <h3>Regalos Registrados</h3>
+                    <div id="loading-gifts" class="loading-spinner"></div>
+                    <ul id="gift-list" class="gift-list">
+                        <!-- Gifts will be dynamically loaded here -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- RSVP Section -->
         <section class="rsvp-section animate-on-scroll">
             <div class="card-container">
@@ -83,30 +107,6 @@
                     </div>
                     <div id="rsvp-message" class="status-message"></div>
                 </form>
-            </div>
-        </section>
-
-        <!-- Gifts Section -->
-        <section class="gifts-section animate-on-scroll">
-            <div class="card-container">
-                <h2>Mesa de Regalos</h2>
-                <p class="form-desc">Si deseas tener un detalle, puedes registrarlo aquí para evitar repeticiones (es completamente anónimo).</p>
-                
-                <form id="gift-form" class="gift-form-layout">
-                    <div class="input-group gift-input-group">
-                        <input type="text" id="gift-name" placeholder="¿Qué regalo llevarás?" required>
-                        <button type="button" class="btn btn-olive btn-register" onclick="registerGift()">Registrar</button>
-                    </div>
-                    <div id="gift-message" class="status-message"></div>
-                </form>
-
-                <div class="gift-list-container">
-                    <h3>Regalos Registrados</h3>
-                    <div id="loading-gifts" class="loading-spinner"></div>
-                    <ul id="gift-list" class="gift-list">
-                        <!-- Gifts will be dynamically loaded here -->
-                    </ul>
-                </div>
             </div>
         </section>
         
