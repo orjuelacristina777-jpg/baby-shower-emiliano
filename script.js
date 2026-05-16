@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Cargar lista de regalos
                 loadGifts();
-            }, 1200);
+            }, 1800);
         }
     });
 
